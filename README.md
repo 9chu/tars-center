@@ -6,7 +6,7 @@
 
 ## 安装顺序
 
-1. 创建数据库用户并赋予权限
+### 创建数据库用户并赋予权限
 
 ```sql
 CREATE USER tars IDENTIFIED BY 'tars2015';
@@ -18,17 +18,17 @@ FLUSH PRIVILEGES;
 
 数据库使用`mysql 5.6`。
 
-2. 启动DOCKER
+### 启动DOCKER
 
 ```shell
 docker run -v /Users/chu/Docker/node-center:/data -e TARS_DB_HOST=db.example.com -d --name node-center 9chu/tars-center
 ```
 
-3. 从管理端手动安装组件
+### 从管理端手动安装组件
 
 请参考TARS安装手册。
 
-相关的安装包会被自动拷贝到/data/install下。
+相关的安装包会被自动拷贝到`/data/install`下。
 
 ## 基本参数
 
