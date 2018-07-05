@@ -73,6 +73,11 @@ fi
 if [ ! -d /data/patch ]; then
     mkdir -p /data/patch
 fi
+
+if [ ! -d /data/patch/tars.upload ]; then
+    mkdir -p /data/patch/tars.upload
+fi
+
 if [ ! -d /usr/local/app/patchs ]; then
     ln -s /data/patch /usr/local/app/patchs
 fi
